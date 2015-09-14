@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-<img src="http://3.bp.blogspot.com/-CiVl--1SkeM/VMymTzkmmkI/AAAAAAAAA_E/XIz_A-3OoLg/s1600/CEVICHE%2BPERUANO%2BDE%2BCORVINA.jpg" title="Ceviche" class="profile">
+![ceviche](http://3.bp.blogspot.com/-CiVl--1SkeM/VMymTzkmmkI/AAAAAAAAA_E/XIz_A-3OoLg/s1600/CEVICHE%2BPERUANO%2BDE%2BCORVINA.jpg)
+
+
 
 Centrarium is a custom theme for Jekyll, made by [Ben Centra][bencentra] for his own blog. He'd be humbled if you liked it enough to use it as well! Installation and configuration instructions can be found in the [GitHub repository](https://github.com/bencentra/centrarium).
 
