@@ -11,7 +11,7 @@ email2: hsarmien@dcc.uchile.cl
 name: Teofilo - Hernán
 description: > 
   Better Sofrware for Better Robots. #SE4Robotics
-baseurl: "/testpage/" # the subpath of your site, e.g. /blog/
+baseurl: "/htrob/" # the subpath of your site, e.g. /blog/
 url: "http://hsarmiento.github.io" # the base hostname & protocol for your site
 #cover: "assets/header_image.jpg"
 cover: "assets/pr2.jpg"
