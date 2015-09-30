@@ -16,8 +16,6 @@ Con las herramientas de ROS, tales como rostopic list y rostopic node, pudimos a
 
 ![Jueves 09 de septiembre]({{site.baseurl}}/assets/week-progress/week03_02.png)
 
-![Jueves 09 de septiembre]({{site.baseurl}}/assets/week-progress/week03_03.png)
-
 ## Cuáles son las posibles fallas que pueden detectar?
 
 Al inspeccionar la herramienta de rqp_graph, pudimos apreciar que el nodo de gazebo está completamente aislado y sin ningún tópico que pueda conectar a otro nodo
