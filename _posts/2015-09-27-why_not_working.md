@@ -37,7 +37,3 @@ De acuerdo a lo anterior, el nodo gazebo queda totalmente aislado de los demás 
 
 Al utilizar rqt_graph, si bien se aprecian las conexiones entre nodos y sus tópicos, no se aprecia ningún mensaje de error que permita conocer que el nodo gazebo produce un estado inesperado, por lo que para saber aquello habría que conocer de antemano las conexiones en el grafo. Sin duda, se esperaría que rqt_graph entregue alguna señal de que algo inesperado ha ocurrido.
 
-
-![Martes 07 de septiembre]({{site.baseurl}}/assets/week-progress/foto1.jpg)
-
-![Jueves 09 de septiembre]({{site.baseurl}}/assets/week-progress/foto2.jpg)
