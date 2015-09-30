@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Por que no funciona?"
-date:   2015-09-29 17:00:00
+date:   2015-09-27 17:00:00
 author: Teófilo - Hernán
 categories: finished
 ---
