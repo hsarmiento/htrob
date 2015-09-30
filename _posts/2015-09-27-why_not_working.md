@@ -12,6 +12,15 @@ categories: finished
 
 Con las herramientas de ROS, tales como rostopic list y rostopic node, pudimos analizar  los diferentes elementos presentes al tratar de lanzar el turtlebot. Además, con rqt_graph pudimos descubrir las conexiones entre los diferentes nodos mediante los tópicos
 
+![Martes 07 de septiembre]({{site.baseurl}}/assets/week-progress/week02_01.jpg)
+
+![Jueves 09 de septiembre]({{site.baseurl}}/assets/week-progress/week02_02.jpg)
+
+![Jueves 09 de septiembre]({{site.baseurl}}/assets/week-progress/week02_03.jpg)
+
+![Jueves 09 de septiembre]({{site.baseurl}}/assets/week-progress/week02_04.jpg)
+
+
 ## Cuáles son las posibles fallas que pueden detectar?
 
 Al inspeccionar la herramienta de rqp_graph, pudimos apreciar que el nodo de gazebo está completamente aislado y sin ningún tópico que pueda conectar a otro nodo
