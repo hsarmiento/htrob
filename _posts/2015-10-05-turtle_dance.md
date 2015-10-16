@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Baile Turtuga I"
+title:  "Baile Tortuga I"
 date:   2015-10-10 17:00:00
 author: Teófilo - Hernán
 categories: finished
 ---
 
-# Baile Turtuga I
+# Baile Tortuga I
 
 ## Tareas realizadas
 Durante esta semana de trabajo se implementó el baile de "moonwalk" para el turtlebot. Primero, se elaboraron los pasos para que funcionará de manera correcta en el simulador de Gazebo y luego en el TurtleBot como tal.
