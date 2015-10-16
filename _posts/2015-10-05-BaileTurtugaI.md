@@ -1,9 +1,11 @@
+---
 layout: post
 title:  "Baile Turtuga sin Action lib"
 date:   2015-10-01 17:00:00
 author: Teófilo - Hernán
 categories: finished
 ---
+
 # Baile Turtuga I
 
 ## Tareas realizadas
