@@ -23,7 +23,7 @@ Por último, recurrimos a la utilización del Odometry, de forma de saber la pos
 ###Resultados
 
 Codigo <a href="https://github.com/tchambil/htrob/blob/master/turtledance1.py">github</a>
- 
+Video Simulación <a href="https://www.dropbox.com/s/uzdap35hb3epltw/20151015_211112.mp4?dl=0">video</a>
 
 ### Críticas
 Para obtener el resultado esperado, la programación del baile se realizó de prueba y error para asi hacer calzar los movimientos esperados. Para ello se tenia que inicializar en cada momento el gazebo lo que realmente era molesto y se perdia un tiempo considerable.
