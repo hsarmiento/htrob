@@ -26,5 +26,5 @@ Codigo <a href="https://github.com/tchambil/htrob/blob/master/turtledance1.py">g
  
 
 ### Críticas
-Para obtener el resultado esperado, la programación del baile se realizó de prueba y error para asi hacer calzar los movieminto esperados. Para ello se tenia que inicializar en cada momento el gazebo lo que realmente era molesto y se perdia un tiempo considerable.
-Por otro lado,la velocidad no se podria controlar, ya que se establecia un parametro esperando que se paralice en ello, lo que tambien nos demoró en la programacion. 
+Para obtener el resultado esperado, la programación del baile se realizó de prueba y error para asi hacer calzar los movimientos esperados. Para ello se tenia que inicializar en cada momento el gazebo lo que realmente era molesto y se perdia un tiempo considerable.
+Por otro lado,la aceleración no se podria controlar, ya que se establecia un parametro esperando que se paralice en ello, lo que tambien nos demoró en la programacion. 
