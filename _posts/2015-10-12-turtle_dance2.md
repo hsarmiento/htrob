@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Baile Turtuga con Action lib"
+title:  "Baile Tortuga con Action lib"
 date:   2015-10-12 17:00:00
 author: Teófilo - Hernán
 categories: Progress
 ---
 
-# Baile Turtuga con Action Lib
+# Baile Tortuga con Action Lib
 
 ## Tareas realizadas
 Para el desarrollo de este trabajo se consideró los pasos definidos anteriormente, tal como se muestra en la imagen.
@@ -27,4 +27,5 @@ Video:
 
 ### Críticas
 - Se debe de modificar demasiados archivos para agregar un mensaje.
-- No está claro el porqué importar el "package msg", esto nos demoró en enteder.
+- No está claro el porqué importar el "package msg", esto nos demoró en entender.
+- Los mensajes automáticos se crean en la carpeta /devel, lo cual nos costó entender y encontrar
