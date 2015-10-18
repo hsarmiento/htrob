@@ -20,7 +20,8 @@ Finalmente, se procede a implementar los pasos definidos en "Baile Tortuga I". S
 
 ###Resultados
 
-Codigo: <a href="https://github.com/tchambil/bailetortuga2">github</a>
+Codigo: <a href="https://github.com/tchambil/bailetortuga2">Ver. Anterior</a> >>>>  <a href="https://github.com/tchambil/turtle2_actionlib">Ver. Actual</a>
+
 
 Video: 
  
