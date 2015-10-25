@@ -3,7 +3,7 @@ layout: post
 title:  "Baile Tortuga con Action lib"
 date:   2015-10-12 17:00:00
 author: Teófilo - Hernán
-categories: Progress
+categories: Finished
 ---
 
 # Baile Tortuga con Action Lib
