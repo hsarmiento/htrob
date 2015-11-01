@@ -8,5 +8,5 @@ categories: Development_project
 
 # Semana #1
 
-![Lunes 26 de octubre]({{site.baseurl}}/assets/project-progress/week01_01.jpg)
+![Lunes 26 de octubre]({{site.baseurl}}/assets/project_progress/week01_01.jpg)
 
