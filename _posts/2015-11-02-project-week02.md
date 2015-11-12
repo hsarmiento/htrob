@@ -9,3 +9,5 @@ categories: Development_project
 # Semana #2
 
 ![Lunes 02 de noviembre]({{site.baseurl}}/assets/project_progress/week02_01.jpg)
+
+![Lunes 06 de noviembre]({{site.baseurl}}/assets/project_progress/week02_02.jpg)
