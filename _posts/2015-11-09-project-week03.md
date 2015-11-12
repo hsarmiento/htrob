@@ -7,3 +7,5 @@ categories: Development_project
 ---
 
 # Semana #3
+
+![Lunes 02 de noviembre]({{site.baseurl}}/assets/project_progress/week03_01.jpg)
