@@ -65,3 +65,12 @@ La tercera y última semana de esta primera iteración tomó un total de 15 pomo
 
 
 #¿Qué podría saber la comunidad?
+
+Durante nuestra primera iteración para lograr la aplicación mencionada, como equipo hemos incorporado nuevas herramientas y metodologías que el resto de la comunidad que desarrolla plugin o aplicaciones para ROS podría conocer.
+
+* Qt Designer para creación de archivos `.ui`: herramienta de gran ayuda para desarrollar no solo aplicaciones de manera gráfica, sino que también para crear mockups que se acerquen lo más posible al diseño final.
+* Usar ejemplo de Github: en la primera etapa de desarrollo y debido a la poca documentación exhibida para la elaboración de aplicaciones utilizando RQT, nuestro primer paquete no tuvo el éxito esperado dado que no podía ser usado. Por ello, una buena medida fue utilizar código libres expuestos en Github de plugin que utilizarán RQT.
+* Uso de Refactoring: a hacer uso de códigos de Github, el código en muchas veces se tornó bastante desordenado y con varias secciones que no eran necesarias pero que sin embargo realizaban las tareas mínimas que proponíamos. Por ello, al entender el funcionamiento del framework de QT, se realizó Refactoring para re-ordenar el código de modo que estuviera más limpio para futuras iteraciones y/o desarrolladores.
+* Tareas micro v/s macro: la asignación de micro tareas versus macro tareas nos ayudó a complementar el uso de Github mediante commits, dado que éstas no se expandían por largos períodos de tiempos y se podían interpretar de mejor manera, sin ambigüedad
+
+
