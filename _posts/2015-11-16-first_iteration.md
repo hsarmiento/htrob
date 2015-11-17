@@ -35,5 +35,33 @@ El desarrollo de esta macro tarea, ejecutada en la primera semana de planificaci
 * Creación del archivo `.ui` (QT Designer): uno de los grandes inconvenientes al desarrollar una aplicación bajo el framework de QT, es la elaboración de la GUI mediante el archivo `.ui`, es cual es un archivo en formato XML que representa toda la estructura y elementos que poseerá la aplicación a desarrollar. Por ello, al realizar esta tarea manualmente, la cantidad de tiempo invertido crece de manera exponencial, impidiendo la ejecución de tareas de mayor importancia. Sin embargo, a través de las investigaciones efectuadas en este trabajo, se pudo encontrar una aplicación que trabaja sobre una GUI que permite crear ventanas y elementos de manera que estos se arrastran a la posición deseada y a través de una exportación, se genera el archivo .ui mencionado anteriormente. Un ejemplo de esto, es lo que aparece en la siguiente imagen.
 * Prueba de ejemplos de GITHUB basados en RQT:  al comenzar con el desarrollo de la aplicación bajo los paquetes de RQT y al hacer uso de los tutoriales oficiales de ROS, no fue posible crear ni entender de manera correcta el real funcionamiento y programación de esta tarea. Por ello, una buena práctica fue testear los códigos presentes en Github que utilizarán RQT de manera de entender las acciones que realizaban cada uno de los métodos presentes en los plugins. Los plugin testeados se encuentran en la siguiente URL: [rqt_common_visualizations](https://github.com/ros-visualization/rqt_common_plugins)
 
+**Problemas**
+
+Al crear y ejecutar de manera inicial nuestra aplicación según lo explicado en el tutorial oficial de ROS para la creación de aplicaciones en RQT, nos fue imposible que está se ejecutará de manera correcta dado que visualizaba un error al efectuar esta tarea. Este problema estuve presente al menos unos 3 pomodoros, es decir, cercana a las 2 horas de trabajo. Finalmente, el real problema era en relación al caché presente en el sistema que impedía crear el paquete correspondiente a nuestra aplicación el cual fue solucionado eliminando éste.
+
+`$ rm ~/.config/ros.org/rqt_gui.ini`
+
+`$ rqt`
+
+## Diseño de interfaz gráfica (GUI)
+
+La segunda semana de desarrollo tuvo una duración de aproximadamente 14 pomodoros, es decir, cercano a las 7 horas de trabajo. En esta fase se ahondó en la creación de la GUI de la aplicación basándonos en lo aprendido en la etapa anterior y recogiendo los avances en cuanto a herramientas y conocimientos aprendidos.
+
+* Uso de QT Designer para archivos `.ui`: de acuerdo lo mencionado anteriormente para QT Designer, la GUI de `rqt_env` fue creada íntegramente con este programa.
+* Entender ventanas, botones y acciones de cada elemento:  uno de los grandes desafíos en vista de la utilización de QT, era conectar los elementos presentes en el XML (`.ui`) frente al código expuesto en Python. Para ello y en base a lo explicado en la etapa anterior respecto a GITHUB, fueron utilizados códigos de referencia para entender este funcionamiento.
+* Creación de GUI “Final”: se elaboró el bosquejo de lo que será la GUI final, la cual inevitablemente puede sufrir pequeñas modificaciones a lo largo del desarrollo.
+
+**Problemas**
+
+Ya al haber conectado la GUI con el código de Python, se presentó el problema de llenar las tablas con datos a partir del último mencionado, el cual tomó una cantidad no menospreciable de pomodoros (o tiempo real). Además, uno de los integrantes del equipo de trabajo enfermó durante toda esta semana por lo que el desarrollo fue más lento de lo esperado pero completando de igual forma gran partes de las tareas planificadas en el Kanban.
+
+## Diseño de estructura XML
+
+La tercera y última semana de esta primera iteración tomó un total de 15 pomodoros (8 horas aproximadamente). En esta fase se desarrolló la re-estructuración del archivo XML que guardará las configuraciones de las variables de entorno seteadas en la aplicación (link a arquitectura del otro post).
+
+* Re-creación de estructura XML: inicialmente al evaluar y planificar el proyecto,se había pensado en un concepto de estructura XML que incluía el valor de cada etiqueta como el nombre de cada variable de ROS y su valor la asignación que tendría esta variable ([Estructura XML antigua](https://github.com/tchambil/rqt_env/blob/master/htbot.xml)). Sin embargo, al estudiar más de fondo el uso de este tipo de archivos, se re-estructuró este formato para lograr una estandarización de estas variables mediante nombres que permitieran extraer, guardar y actualizar la información de manera correcta tal como se exhibe en el siguiente archivo: [Estructura XML actual](https://github.com/hsarmiento/rqt_env/blob/master/resource/env.xml)
+* Conexión de GUI con XML (lectura de datos): un gran desafío del primer aprendizaje de esta etapa, era incluir todas las herramientas mencionadas anteriormente  y lograr la inclusión de cada una de éstas en una sola aplicación que permitiera entregar un primer feedback para el equipo. Así, se utilizó un XML que tuviera datos previamente cargados de forma manual, el cual fue leído por la GUI de forma que pudieran ser visualizados los datos en la aplicación `rqt_env`.
+* Refactoring: debido a la gran cantidad de pruebas que fueron desarrolladas con distintos códigos de aplicaciones que hacen uso de rqt, nuestro proyecto contenía mucho código inservible y desordenado, por lo que se procedió a eliminar estas líneas que no entregaba aporte a nuestro proyecto.
+
 
 #¿Qué podría saber la comunidad?
