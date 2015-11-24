@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Semana #4 desarrollo proyecto"
-date:   2015-11-06 17:00:00
+date:   2015-11-16 17:00:00
 author: Teófilo - Hernán
 categories: Development_project
 ---
