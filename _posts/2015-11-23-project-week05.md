@@ -9,3 +9,4 @@ categories: Development_project
 # Semana #5
 
 ![Lunes 23 de noviembre]({{site.baseurl}}/assets/project_progress/week05_01.jpg)
+![Viernes 27 de noviembre]({{site.baseurl}}/assets/project_progress/week05_02.jpg)
