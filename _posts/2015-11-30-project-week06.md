@@ -6,7 +6,7 @@ author: Teófilo - Hernán
 categories: Development_project
 ---
 
-# Semana #5
+# Semana #6
 
 ![Lunes 30 de noviembre]({{site.baseurl}}/assets/project_progress/week06_01.jpg)
 ![Viernes 04 de diciembre]({{site.baseurl}}/assets/project_progress/week06_02.jpg)
