@@ -31,7 +31,7 @@ La descripción de las micro tareas realizadas se presenta a continuación:
 
 * Leer contenido de variables de general y para cada robot: a partir del XML (`env.xml`), se leen las variables que no han sido eliminadas para así ser visualizadas en los widget pertinentes a cada sección. Lo anterior, se logra de acuerdo a los atributos presentes en cada etiqueta de variable que tenga un valor de `deleted=0`, tal como el siguiente ejemplo:
 
-```xml
+```
 <general>       
 		<variable deleted="1" name="ORBIT_SOCKETDIR" value="/tmp/orbit-robotica" />		
 		<variable deleted="0" name="PYTHONPATH" value="/home/robotica/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages" />
