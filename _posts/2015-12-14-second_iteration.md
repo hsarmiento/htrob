@@ -32,7 +32,7 @@ La descripción de las micro tareas realizadas se presenta a continuación:
 * Leer contenido de variables de general y para cada robot: a partir del XML (`env.xml`), se leen las variables que no han sido eliminadas para así ser visualizadas en los widget pertinentes a cada sección. Lo anterior, se logra de acuerdo a los atributos presentes en cada etiqueta de variable que tenga un valor de `deleted=0`, tal como el siguiente ejemplo:
 
 
-```xml<general>      
+```<general>      
 	<variable deleted="1" name="ORBIT_SOCKETDIR" value="/tmp/orbit-robotica" />		
 	<variable deleted="0" name="PYTHONPATH" value="/home/robotica/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages" />
 	     <variable deleted="0" name="ROS_ROOT" value="/opt/ros/indigo/share/ros" />	
@@ -91,10 +91,13 @@ La descripción de las micro tareas son explicadas a continuación:
 
 #Análisis de planificación estimada
 
-## Tiempo(pomodoros) estimado vs Tiempo real de desarrollo
+En esta segunda etapa de desarrollada y ya contando con una planificación pre realizada antes de cada semana, se contabilizaron un total de 97. Sin embargo, el total real de pomodoros fue 124 pomodoros, superando así en un 27% lo que fue estimado en el comienzo de cada semana. 
+
+![Gráfico pomodoros]({{site.baseurl}}/assets/project_progress/pomodoros.png)
+
 
 ## Análisis de zona crítica
-
+Para explicar(en parte) la diferencia anteriormente mencionadas, es posible analizar el gráfico de frecuencia de código expuesto por Github para conocer la caída en la cantidad de líneas por día/semana. Así, en la imagen expuesta a continuación, se aprecia 
 
 
 
