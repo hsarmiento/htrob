@@ -43,8 +43,8 @@ La descripción de las micro tareas realizadas se presenta a continuación:
 
 
 * Agregar variables de general y robot: para el caso de una variable general del entorno de ROS, esta simplemente se inserta dentro de las etiquetas `<general>...</general>` con su respectivo nombre y valor. Para el caso de agregar un nuevo robot, este se agrega entre las etiquetas `<robots> ... </robots>`. Además, por cada robot se insertan las etiquetas `<robot> ... </robot>` las cuales poseen atributos de identificador (o alias), eliminación (deleted) y uso actual (status). Para cada una de estas etiquetas, es posible agregar N nodos que representan las variables que cada robot poseerá. 
-```
-<robots>
+
+```<robots>
 	  <robot deleted="0" id="turtlebot1" status="1">
 			<variable deleted="0" name="TURTLEBOT_NAME" value="turtlebot" />
 			<variable deleted="0" name="TURTLEBOT_TYPE" value="turtlebot" />
