@@ -87,6 +87,7 @@ La descripción de las micro tareas son explicadas a continuación:
 
 * Testing: se utilizó la técnica de Unit Testing, el cual comprende una serie de técnica para asociar valores esperados con valores entregados por la aplicación, para así comparar y analizar si son realmente verídicos. Así, fue integrada librería de Python, `unittest`, que permitía efectuar tales acciones. Con esto, fueron probadas las principales funcionalidades, tales como la lectura de datos desde el archivo XML así como la exportación al archivo `.htbash`
 * Documentación: esta tarea incluye la incorporación del archivo `README.md` que permite una rápida explicación e instalación del proyecto en la ventana principal del repositorio. También se añadió la documentación más detallada correspondien a la wiki del proyecto, la cual puede ser observada en el siguiente link [Wiki rqt_env](https://github.com/hsarmiento/rqt_env/wiki).
+* Refactoring: corresponde a la tarea de eliminar y mejorar el código presente hasta el momento.
 
 #Análisis de planificación estimada
 
