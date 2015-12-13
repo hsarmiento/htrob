@@ -43,7 +43,7 @@ La descripción de las micro tareas realizadas se presenta a continuación:
 
 
 * Agregar variables de general y robot: para el caso de una variable general del entorno de ROS, esta simplemente se inserta dentro de las etiquetas `<general>...</general>` con su respectivo nombre y valor. Para el caso de agregar un nuevo robot, este se agrega entre las etiquetas `<robots> ... </robots>`. Además, por cada robot se insertan las etiquetas `<robot> ... </robot>` las cuales poseen atributos de identificador (o alias), eliminación (deleted) y uso actual (status). Para cada una de estas etiquetas, es posible agregar N nodos que representan las variables que cada robot poseerá. 
-```xml
+```
 <robots>
 	  <robot deleted="0" id="turtlebot1" status="1">
 			<variable deleted="0" name="TURTLEBOT_NAME" value="turtlebot" />
@@ -56,17 +56,37 @@ La descripción de las micro tareas realizadas se presenta a continuación:
 ```
 * Edición de variables: para este caso, simplemente se busca el nodo a editar de acuerdo a su nombre(para el caso de variables generales) y en el caso de robots, se encuentra el identificador correspondiente y luego se analizan las variables a editar. Dado que la librería usada no necesita crear un archivo temporal para realizar esta acción, la modificación se efectúa directamente sobre ella.
 * 
-* Eliminación de variables: si bien, la eliminación de variables podía efectuarse directamente sobre el XML, esto no aseguraba nada sobre el archivo bash. Para ello, se predispuso primero cambiar el estado de cada variable a `deleted=1` y luego cuando este fuera exportado al archivo final (bash), se eliminaría del XML
+* Eliminación de variables: si bien, la eliminación de variables podía efectuarse directamente sobre el XML, esto no aseguraba nada sobre el archivo bash. Para ello, se predispuso primero cambiar el estado de cada variable a `deleted=1` y luego cuando este fuera exportado al archivo final (bash), se eliminaría del XML.
+
 
 
 ## Exportación de XML a  archivo bash
 
+El desarrollo de esta macro tarea involucraba la mitad de la semana 5, la cual trataba en eliminar y exportar las variables que habían sido asignadas en la GUI mediante la utilización de un archivo XML, para luego "parsear" tales valores de modo que fueran incluido en un archivo bash adicional. De esta forma, este último archivo sería incluido en el archivo original `.bashrc` original, permitiendo así que las configuraciones nunca fueran realizadas directamente sobre el ya mencionado. De acuerdo a lo planificado al comienzo de la semana, esta macro tarea contaría con utilización de 29 pomodoros, los cuales fueron superados en creces por los 36 pomodoros que realmente se realizaron.
 
+La descripción de las micro tareas se efectúa a continuación:
 
-## Testing
+* Aplicar unset a variables eliminadas: probablemente una de las tareas que más tiempo tomo dentro del desarrollo. La idea principal de esta acción era desarrollar un mecanismo que evitará la realización del comando `source` sobre el archivo `.bashrc` en una terminal. Sin embargo, ésta no pudo ser efectuada ya que la aplicación del comando `source` se hace sobre el actual entorno de trabajo, es decir, si un programa en Python hace la llamada de este comando, su resultado solo se verá expresado sobre ese programa pero no sobre el sistema operativo completo. De esta forma, el uso del comando `source`sobre cada terminal no pudo ser alterado. La aplicación del comando `unset` (el cual libera la asignación de una variable de entorno) se efectuó escribiendo al comienzo del archivo bash adicional, llamado `.htbash`, todas las variables que serían eliminadas a través de la GUI.
+```
+unset ROS_PACKAGE
+```
 
-## Documentación
+* Aplicar export a variables asignadas: para exportar los valores desde el XML al archivo `.htbash`, desde la GUI de la aplicación se presiona el botón Apply para así efectuar esta acción. De esta manera, la aplicación busca todos los valores que no han sido eliminados (y que estén activos para el caso de un robot) para luego ser incoporados en el `.htbash`
+```
+export ROS_HOSTNAME=localhost
+```
+* Validación de estados de botones en GUI: para no producir estados que alterarán las acciones de la aplicación, se incorporó validación de los estados de los botones de la GUI, es decir, la activación y desactivación de éstos de acuerdo a los las acciones que se ejecutarán.
+* Inclusión de archivo .htbash adicional a .bashrc: tras la generación del archivo `.htbash` (el cual contiene la información de las variables asignadas o elimadas de ROS), es de vital importancia que este sea incluido en el archivo `.bashrc` de modo que tras aplicar el comando `source`, los cambios sean consistentes con lo configurado en la aplicación.
 
+![Ventana final]({{site.baseurl}}/assets/project_progress/window_env.png)
+
+## Testing, Documentación y Refactoring
+Estas tareas fueron consideradas en la última semana de trabajo, es decir, semana 6 (y parte de la semana 7 correspondiente a la presentación final). A pesar de en un comienzo solo se incluía el manejo de estas tareas, fueron incorporadas otros detalles pequeños que fueron encontrados al realizar el refactoring, tales como estados incosistentes en relación a mensajes o botones. La estimación en tiempo alcanzaba los 42 pomodoros (para ambas semanas, incluyendo la presentación) pero fue superadas en 15 pomodoros, entregando un total de 57 divisiones de tiempo.
+
+La descripción de las micro tareas son explicadas a continuación:
+
+* Testing: se utilizó la técnica de Unit Testing, el cual comprende una serie de técnica para asociar valores esperados con valores entregados por la aplicación, para así comparar y analizar si son realmente verídicos. Así, fue integrada librería de Python, `unittest`, que permitía efectuar tales acciones. Con esto, fueron probadas las principales funcionalidades, tales como la lectura de datos desde el archivo XML así como la exportación al archivo `.htbash`
+* Documentación: esta tarea incluye la incorporación del archivo `README.md` que permite una rápida explicación e instalación del proyecto en la ventana principal del repositorio. También se añadió la documentación más detallada correspondien a la wiki del proyecto, la cual puede ser observada en el siguiente link [Wiki rqt_env](https://github.com/hsarmiento/rqt_env/wiki).
 
 #Análisis de planificación estimada
 
