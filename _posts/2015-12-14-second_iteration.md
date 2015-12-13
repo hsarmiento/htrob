@@ -99,7 +99,7 @@ En esta segunda etapa de desarrollada y ya contando con una planificación pre r
 ## Análisis de zona crítica
 Para explicar(en parte) la diferencia anteriormente mencionadas, es posible analizar el gráfico de frecuencia de código expuesto por Github para conocer la caída en la cantidad de líneas por día/semana. Así, en la imagen expuesta a continuación, se aprecia un caída a partir del día 23 de noviembre, que coincide con la semana 5, tramo en el cual se comenzó con el trabajo de exportación de XML a `.htbash`, el cual sufrió muchos retrasos al no encontrar una solución para el comando `source` sobre la solución generada.
 
-![Frecuencia de código]({{site.baseurl}}/assets/project/code_frecuency.png)
+![Frecuencia de código]({{site.baseurl}}/assets/project/code_frequency.png)
 
 
 
