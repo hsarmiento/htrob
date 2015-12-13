@@ -78,7 +78,7 @@ export ROS_HOSTNAME=localhost
 * Validación de estados de botones en GUI: para no producir estados que alterarán las acciones de la aplicación, se incorporó validación de los estados de los botones de la GUI, es decir, la activación y desactivación de éstos de acuerdo a los las acciones que se ejecutarán.
 * Inclusión de archivo .htbash adicional a .bashrc: tras la generación del archivo `.htbash` (el cual contiene la información de las variables asignadas o elimadas de ROS), es de vital importancia que este sea incluido en el archivo `.bashrc` de modo que tras aplicar el comando `source`, los cambios sean consistentes con lo configurado en la aplicación.
 
-![Ventana final]({{site.baseurl}}/assets/project_progress/window_env.png)
+![Ventana final]({{site.baseurl}}/assets/project/window_env.png)
 
 ## Testing, Documentación y Refactoring
 Estas tareas fueron consideradas en la última semana de trabajo, es decir, semana 6 (y parte de la semana 7 correspondiente a la presentación final). A pesar de en un comienzo solo se incluía el manejo de estas tareas, fueron incorporadas otros detalles pequeños que fueron encontrados al realizar el refactoring, tales como estados incosistentes en relación a mensajes o botones. La estimación en tiempo alcanzaba los 42 pomodoros (para ambas semanas, incluyendo la presentación) pero fue superadas en 15 pomodoros, entregando un total de 57 divisiones de tiempo.
@@ -93,11 +93,13 @@ La descripción de las micro tareas son explicadas a continuación:
 
 En esta segunda etapa de desarrollada y ya contando con una planificación pre realizada antes de cada semana, se contabilizaron un total de 97. Sin embargo, el total real de pomodoros fue 124 pomodoros, superando así en un 27% lo que fue estimado en el comienzo de cada semana. 
 
-![Gráfico pomodoros]({{site.baseurl}}/assets/project_progress/pomodoros.png)
+![Gráfico pomodoros]({{site.baseurl}}/assets/project/pomodoros.png)
 
 
 ## Análisis de zona crítica
-Para explicar(en parte) la diferencia anteriormente mencionadas, es posible analizar el gráfico de frecuencia de código expuesto por Github para conocer la caída en la cantidad de líneas por día/semana. Así, en la imagen expuesta a continuación, se aprecia 
+Para explicar(en parte) la diferencia anteriormente mencionadas, es posible analizar el gráfico de frecuencia de código expuesto por Github para conocer la caída en la cantidad de líneas por día/semana. Así, en la imagen expuesta a continuación, se aprecia un caída a partir del día 23 de noviembre, que coincide con la semana 5, tramo en el cual se comenzó con el trabajo de exportación de XML a `.htbash`, el cual sufrió muchos retrasos al no encontrar una solución para el comando `source` sobre la solución generada.
+
+![Gráfico pomodoros]({{site.baseurl}}/assets/project/frecuencia.png)
 
 
 
