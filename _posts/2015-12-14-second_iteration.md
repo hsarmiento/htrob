@@ -54,8 +54,9 @@ La descripción de las micro tareas realizadas se presenta a continuación:
     </robot>
 </robots>
 ```
+
 * Edición de variables: para este caso, simplemente se busca el nodo a editar de acuerdo a su nombre(para el caso de variables generales) y en el caso de robots, se encuentra el identificador correspondiente y luego se analizan las variables a editar. Dado que la librería usada no necesita crear un archivo temporal para realizar esta acción, la modificación se efectúa directamente sobre ella.
-* 
+
 * Eliminación de variables: si bien, la eliminación de variables podía efectuarse directamente sobre el XML, esto no aseguraba nada sobre el archivo bash. Para ello, se predispuso primero cambiar el estado de cada variable a `deleted=1` y luego cuando este fuera exportado al archivo final (bash), se eliminaría del XML.
 
 
