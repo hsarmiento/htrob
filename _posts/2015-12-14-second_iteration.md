@@ -63,7 +63,7 @@ La descripción de las micro tareas realizadas se presenta a continuación:
 
 ## Exportación de XML a  archivo bash
 
-El desarrollo de esta macro tarea involucraba la mitad de la semana 5, la cual trataba en eliminar y exportar las variables que habían sido asignadas en la GUI mediante la utilización de un archivo XML, para luego "parsear" tales valores de modo que fueran incluido en un archivo bash adicional. De esta forma, este último archivo sería incluido en el archivo original `.bashrc` original, permitiendo así que las configuraciones nunca fueran realizadas directamente sobre el ya mencionado. De acuerdo a lo planificado al comienzo de la semana, esta macro tarea contaría con utilización de 29 pomodoros, los cuales fueron superados en creces por los 36 pomodoros que realmente se realizaron.
+El desarrollo de esta macro tarea involucraba la mitad de la semana 5, la cual trataba en eliminar y exportar las variables que habían sido asignadas en la GUI mediante la utilización de un archivo XML, para luego "parsear" tales valores de modo que fueran incluidos en un archivo bash adicional. De esta forma, este último archivo sería exportado al archivo original `.bashrc`, permitiendo así que las configuraciones nunca fueran realizadas directamente sobre el ya mencionado. De acuerdo a lo planificado al comienzo de la semana, esta macro tarea contaría con la utilización de 29 pomodoros, los cuales fueron superados en creces por los 36 pomodoros que realmente se realizaron.
 
 La descripción de las micro tareas se efectúa a continuación:
 
